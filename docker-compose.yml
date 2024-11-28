@@ -1,0 +1,28 @@
+version: "3.6"
+
+services:
+  firod:
+    restart: unless-stopped
+    image: firoorg/firod 
+    entrypoint: /bin/firod -printtoconsole -conf=/cfg/firo.conf
+    expose:
+      "8888"
+    volumes:
+      - firod-chain:/home/firod/
+      - ./cfg/firod:/cfg
+  electrumx-firo:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "50002:50002"
+    volumes:
+      - electrumx-data:/data
+    environment:
+      - DAEMON_URL=DAEMON_URL=http://RPCUSER:RPCPASSWORD@firod:8888
+      - COIN=Firo
+
+volumes:
+  firod-chain:
+  electrumx-data:
