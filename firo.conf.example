@@ -4,9 +4,7 @@ rpcpassword=RPCPASSWORD
 disablewallet=1
 daemon=1
 
-rpcbind=0.0.0.0
-rpcallowip=172.17.0.1/16
-rpcallowip=127.0.0.1
+rpcallowip=::/0
 
 # Allows use with Stack Wallet and Campfire
 mobile=1
