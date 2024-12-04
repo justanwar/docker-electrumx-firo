@@ -15,7 +15,7 @@ Standalone Electrumx:
 ```
 docker run -d \
 -v electrumx-data:/data \
--e DAEMON_URL=http://RPCUSER:RPCPASSWORD@localhost:18888 \
+-e DAEMON_URL=http://rpcuser:rpcpassword@localhost:18888 \
 -e COIN=Firo \
 -p 50002:50002 \
 electrumx

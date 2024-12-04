@@ -1,10 +1,11 @@
 # For use with non-containerized firod
-rpcuser=RPCUSER
-rpcpassword=RPCPASSWORD
+rpcuser=rpcuser
+rpcpassword=rpcpassword
 disablewallet=1
 daemon=1
 
 rpcallowip=::/0
 
 # Allows use with Stack Wallet and Campfire
+# Changing this requires reindexing firod
 mobile=1
