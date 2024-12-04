@@ -20,3 +20,7 @@ jobs:
      - uses: actions/checkout@v4
      - name: Build Docker image 
        run: docker build -t electrumx-firo .
+     - uses: hoverkraft-tech/compose-action@v2.0.2
+       name: Build Docker Compose
+       with:
+        up-flags: "--build"
