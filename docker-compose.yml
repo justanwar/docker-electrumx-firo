@@ -6,7 +6,7 @@ services:
     image: firoorg/firod 
     entrypoint: /bin/firod -printtoconsole -conf=/cfg/firo.conf
     expose:
-      "8888"
+      - "8888"
     volumes:
       - firod-chain:/home/firod/
       - ./cfg/firod:/cfg
