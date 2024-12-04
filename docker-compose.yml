@@ -9,7 +9,7 @@ services:
       - "8888"
     volumes:
       - firod-chain:/home/firod/
-      - ./cfg/firod:/cfg
+      - ./cfg:/cfg
   electrumx-firo:
     restart: unless-stopped
     build:
