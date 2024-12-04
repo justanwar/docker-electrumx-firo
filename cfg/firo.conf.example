@@ -2,7 +2,6 @@
 rpcuser=rpcuser
 rpcpassword=rpcpassword
 disablewallet=1
-daemon=1
 
 rpcallowip=::/0
 
