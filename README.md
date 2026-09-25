@@ -1,3 +1,5 @@
+**READ THIS: This project has been archived. A better, working alternative is available at [https://github.com/NexusOcean/electrumx-firo.](https://github.com/NexusOcean/electrumx-firo)**
+
 Heavily based on https://github.com/lukechilds/docker-electrumx
 
 Pulls [Firo's Electrumx](https://github.com/firoorg/electrumx-firo) and builds it into a Dockerfile to run.
